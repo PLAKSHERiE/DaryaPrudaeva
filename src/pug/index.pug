@@ -3,11 +3,18 @@ html(lang="ru")
   head
     include blocks/default/head.pug
   body
-    include blocks/header.pug
+    include blocks/default/header.pug
 
-    //- div.lazy.test(data-bg="img/bg_2.webp", data-bg-fallback="img/bg_2.jpg")
+    include blocks/fit.pug
+    include blocks/when.pug
+    include blocks/about.pug
+    include blocks/students.pug
+    include blocks/programs.pug
+    include blocks/tariffs.pug
+    include blocks/faq.pug
+    include blocks/form.pug
 
     include blocks/default/footer.pug
-    include blocks/popups.pug
+    include blocks/default/popups.pug
     include blocks/default/after_footer.pug
-    include blocks/scripts_footer.pug
+    include blocks/default/scripts_footer.pug

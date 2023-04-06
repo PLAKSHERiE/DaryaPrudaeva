@@ -25,12 +25,65 @@ body {
 
   min-height: 100%;
 
-  // font-family: $font-family-primary;
+    font-family: 'Inter', Helvetica,Arial,sans-serif;
 }
 
-img {
-  max-width: 100%;
+img, svg {
+  width: 100%;
   height: auto;
 
   vertical-align: middle;
+}
+
+.container {
+    width: 100%;
+    max-width: 1282px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    background: linear-gradient(90.01deg, #F55882 2.69%, #FF7DA0 22.51%, #F03B6C 41.5%, #FB668E 63.8%, #E97695 81.97%), #D9D9D9;
+    box-shadow: inset 0px 4px 34px rgba(255, 255, 255, 0.25);
+    border-radius: 24px;
+    font-family: 'SONGER Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.04em;
+    text-decoration: none;
+    padding: 15px 56px;
+    box-shadow: 0px 3px 0px rgb(233, 57, 105);
+    margin-bottom: 3px;
+
+    span {
+        background: linear-gradient(90.72deg, #FFFFFF 0.6%, rgba(255, 255, 255, 0.72) 61.91%, #FFFFFF 99.52%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+
+.title {
+    font-family: 'SONGER Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 113.6%;
+    letter-spacing: -0.04em;
+
+    background: linear-gradient(90deg, #1C2027 0%, #2E3D52 38.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    text-shadow: 0px 19px 140px rgba(0, 0, 0, 0.15), 0px 15px 140px rgba(0, 0, 0, 0.1);
 }

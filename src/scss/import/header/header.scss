@@ -1,0 +1,202 @@
+$parent-class: '.header';
+
+#{$parent-class} {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+    $top-class: #{$parent-class} + '__top';
+
+    &__top {
+        padding-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 464px;
+        margin: 0 auto;
+
+        $top-item-class: $top-class + '-item';
+
+        &-item {
+            &-title {
+                font-family: 'SONGER Grotesque';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 41px;
+
+
+                background: linear-gradient(90.01deg, #F55882 2.69%, #FF7DA0 22.51%, #F03B6C 41.5%, #FB668E 63.8%, #E97695 81.97%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+
+            &-text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 125.02%;
+
+                letter-spacing: 0.195em;
+                text-transform: uppercase;
+
+                color: rgba(36, 36, 36, 0.75);
+                margin-top: 4px;
+            }
+
+            &--left {
+                #{$top-item-class}-text {
+                    text-align: right;
+                }
+            }
+
+            &--right {
+
+            }
+        }
+
+        &-sun {
+            display: none;
+        }
+    }
+
+    &__main {
+        max-width: 938px;
+        margin: 74px auto 0;
+    }
+
+    &__subtitle {
+        font-family: 'SONGER Grotesque';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+        letter-spacing: -0.04em;
+
+        background: linear-gradient(180deg, rgba(36, 36, 36, 0.9) 25.36%, rgba(36, 36, 36, 0.76) 74.26%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        //display: inline-block;
+
+        &--right {
+            text-align: right;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin: 11px 0 12px;
+
+        &-item {
+            width: 100%;
+
+            &:first-child {
+                max-width: 350px;
+            }
+
+            &:last-child {
+                max-width: 374px;
+            }
+
+            svg {
+                filter: drop-shadow(0px 19px 140px rgba(0, 0, 0, 0.15)) drop-shadow(0px 15px 140px rgba(0, 0, 0, 0.1));
+            }
+        }
+    }
+
+    &__imgs {
+    }
+
+    &__sun {
+        width: 100%;
+        max-width: 620px;
+        position: absolute;
+        bottom: -164px;
+        left: calc(50% + 344px);
+        transform: translate(-50%, 0%);
+    }
+
+    &__woman {
+        width: 100%;
+        max-width: 627px;
+        position: absolute;
+        bottom: -152px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.15)) drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.1));
+    }
+
+    &__bottom {
+        width: 100%;
+        height: 52px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__petals {
+        position: absolute;
+        width: 53px;
+        transform: translate(-50%, 0%);
+        left: calc(50% - 205px);
+        bottom: 370px;
+
+        &--two {
+            transform: rotate(-109.12deg) translate(-50%, 0%);
+            left: calc(50% + 314px);
+            bottom: 480px;
+        }
+
+        &--left {
+            width: 200px;
+            left: 0;
+            bottom: 254px;
+            transform: none;
+        }
+        &--right {
+            width: 364px;
+            bottom: 100px;
+            right: 0;
+            left: auto;
+            transform: none;
+        }
+    }
+
+    &__content {
+        position: relative;
+        max-width: 307px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+
+        color: #242424;
+    }
+
+    &__footer {
+        margin: 40px 0 150px;
+    }
+
+    &__btn {
+        margin-top: 16px;
+    }
+}
