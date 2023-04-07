@@ -1,0 +1,144 @@
+.programs {
+    background: #FAF8F7;
+    padding: 38px 0 42px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        ". . . ."
+        ". . last last";
+        gap: 66px 20px;
+        margin-top: 85px;
+    }
+
+    &__item {
+        border: 1px solid #F03C6C;
+        background: #FAF8F7;
+        border-radius: 24px;
+        padding: 64px 18px 44px;
+        min-height: 540px;
+        position: relative;
+
+        &:last-child {
+            grid-area: last;
+        }
+
+        &-title {
+            font-family: 'SONGER Grotesque';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 102%;
+            text-align: center;
+
+            color: #000000;
+            margin-bottom: 26px;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &-item {
+                display: flex;
+                gap: 12px;
+
+                &--icon {
+                    gap: 12px;
+                }
+
+                &-icon {
+                    width:18px;
+                    flex: 0 0 auto;
+                }
+
+                &-title {
+                    font-family: 'SONGER Grotesque';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 102%;
+
+                    color: #000000;
+                    flex: 0 0 auto;
+
+                }
+
+                &-text {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 144%;
+
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+.card-head {
+    position: absolute;
+
+    background: linear-gradient(90.01deg, #6EE450 2.69%, #B2FC9F 22.51%, #77ED59 41.5%, #A3E193 63.8%, #98F381 81.97%), #F7F5F4;
+    box-shadow: inset 0px 4px 34px rgba(255, 255, 255, 0.25);
+    border-radius: 24px;
+    top: -36px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 15px 52px;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0px 3px 0px rgb(233, 57, 105);
+
+    &__text {
+        font-family: 'SONGER Grotesque';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 41px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.04em;
+
+        background: linear-gradient(90.72deg, #FFFFFF 0.6%, rgba(255, 255, 255, 0.72) 61.91%, #FFFFFF 99.52%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    &__number {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F9F7F6;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -24px;
+        right: 0;
+
+        span {
+            font-family: 'SONGER Grotesque';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 41px;
+            letter-spacing: -0.04em;
+
+            background: linear-gradient(90.01deg, #F55882 2.69%, #FF7DA0 22.51%, #F03B6C 41.5%, #FB668E 63.8%, #E97695 81.97%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+}
