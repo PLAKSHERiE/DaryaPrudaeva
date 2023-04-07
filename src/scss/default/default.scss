@@ -69,6 +69,10 @@ img, svg {
         background-clip: text;
         text-fill-color: transparent;
     }
+
+    &__center {
+        text-align: center;
+    }
 }
 
 .title {

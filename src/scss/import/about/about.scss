@@ -1,0 +1,67 @@
+.about {
+    background: #FAF8F7;
+    padding: 50px 0 160px;
+
+    &__box {
+        background: url("/img/about/bg--box.jpg") no-repeat;
+        background-color: rgba(250, 250, 250, 0.15);
+        background-position: center;
+        background-size: cover;
+        border-radius: 56px;
+        border: 2px solid #F03C6C;
+        position: relative;
+        padding: 38px 48px 70px;
+    }
+
+    &__title {
+        display: inline-block;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            &-icon {
+                width: 32px;
+                display: block;
+            }
+            &-text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #242424;
+                b {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &__woman {
+        position: absolute;
+        width: 548px;
+        right: -2px;
+        top: -120px;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: -36px;
+        left: 42px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
