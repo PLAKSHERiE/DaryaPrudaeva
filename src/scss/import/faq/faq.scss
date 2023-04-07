@@ -1,0 +1,85 @@
+.faq {
+    padding: 38px 0 60px;
+    background: #FAF8F7;
+    position: relative;
+
+    &__imgs {}
+
+    &__question {
+        background: url("/img/faq/question.png") no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+
+        &--left {
+            width: 285px;
+            height: 480px;
+            bottom: 70px;
+            left: calc(50% - 520px);
+            transform: rotate(22.86deg) translate(-50%, 0%);
+
+        }
+        &--right {
+            width: 330px;
+            height: 556px;
+            bottom: -60px;
+            left: calc(50% + 504px);
+            transform: rotate(13.73deg) translate(-50%, 0%);
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        max-width: 870px;
+        margin: 48px auto 0;
+    }
+
+    &__item {
+        background: #FCFCFC;
+        box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.05);
+        border-radius: 12px;
+
+        &-head {
+            padding: 22px 60px 22px 18px;
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                height: 36px;
+                width: 2px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(0%, -50%);
+                background: #F14473;
+                border-radius: 46px;
+            }
+
+            &-text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+
+                color: #1B1919;
+            }
+            &-icon {
+                position: absolute;
+                width: 24px;
+                right: 15px;
+                top: 24px;
+            }
+        }
+    }
+}
