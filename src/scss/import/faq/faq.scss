@@ -1,9 +1,14 @@
 .faq {
     padding: 38px 0 60px;
-    background: #FAF8F7;
+    background: url("/img/faq/bg.png") no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: #FAF8F7;
     position: relative;
 
-    &__imgs {}
+    &__imgs {
+        pointer-events: none;
+    }
 
     &__question {
         background: url("/img/faq/question.png") no-repeat;
@@ -25,6 +30,30 @@
             bottom: -60px;
             left: calc(50% + 504px);
             transform: rotate(13.73deg) translate(-50%, 0%);
+        }
+    }
+
+    &__feathers {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+
+        &--left {
+            background-image: url("/img/faq/feathers--left.png");
+            width: 820px;
+            height: 960px;
+            top: -116px;
+            left: calc(50% - 530px);
+            transform: translate(-50%, 0%);
+        }
+        &--right {
+            background-image: url("/img/faq/feathers--right.png");
+            width: 446px;
+            height: 612px;
+            top: 146px;
+            left: calc(50% + 622px);
+            transform: translate(-50%, 0%);
         }
     }
 

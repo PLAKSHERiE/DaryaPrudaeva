@@ -1,5 +1,9 @@
 .details {
-    background: #FAF8F7;
+    background: url("/img/details/bg.png") no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    background-color: #FAF8F7;
+
     padding: 32px 0 100px;
 
     &__title {

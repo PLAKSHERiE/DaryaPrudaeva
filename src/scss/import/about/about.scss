@@ -1,6 +1,9 @@
 .about {
-    background: #FAF8F7;
     padding: 50px 0 160px;
+    background: url("/img/students/bg.png") no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: #FAF8F7;
 
     &__box {
         background: url("/img/about/bg--box.jpg") no-repeat;

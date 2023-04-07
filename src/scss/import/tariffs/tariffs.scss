@@ -1,6 +1,9 @@
 .tariffs {
     padding: 32px 0 42px;
-    background: #FAF8F7;
+    background: url("/img/tariffs/bg.png") no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: #FAF8F7;
 
     &__title {
         text-align: center;

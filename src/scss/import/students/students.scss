@@ -1,6 +1,9 @@
 .students {
-    background: #FAF8F7;
     padding: 14px 0 22px;
+    background: url("/img/students/bg.png") no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: #FAF8F7;
 
     &__title {
         text-align: center;

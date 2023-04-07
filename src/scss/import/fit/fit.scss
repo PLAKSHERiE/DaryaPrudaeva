@@ -1,10 +1,9 @@
 .fit {
     position: relative;
-    background: #FAF8F7;
-    background-image: url("/img/fit/bg.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center bottom 12px;
+    background: url("/img/footer/bg.png") no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: #FAF8F7;
 
     &__el {
         width: 100%;
@@ -12,6 +11,18 @@
         position: absolute;
         left: 0;
         top: 40px;
+    }
+
+    &__leaves {
+        position: absolute;
+        background-image: url("/img/fit/leaves.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom 12px;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 
     &__circle {
