@@ -1,2 +1,106 @@
+-
+    const tariffs = [
+        {
+            name: 'В группе веселее',
+            price: '24 000₽',
+            linkPay: '#',
+            linkInstallment: '#',
+            list: [
+                {
+                    text: 'Все модули, кроме модуля VIP о запуске своего обучения'
+                },
+                {
+                    text: 'Готовые посты и фото для блога'
+                },
+                {
+                    text: 'Бонус «Как создать студию красоты»'
+                },
+                {
+                    text: 'Бонус «ИП или самозанятость»'
+                },
+                {
+                    text: 'Бонус «Ценообразование бьюти-мастера»'
+                },
+                {
+                    text: 'Групповые видеосозвоны'
+                },
+                {
+                    text: 'Поддержка в общем чате'
+                },
+            ],
+        },
+        {
+            name: 'Персональное сопровождение',
+            price: '56 000₽',
+            linkPay: '#',
+            linkInstallment: '#',
+            list: [
+                {
+                    text: 'Все модули, включая модуль VIP о запуске своего обучения'
+                },
+                {
+                    text: 'Готовые посты и фото для блога'
+                },
+                {
+                    text: 'Бонус «Как создать студию красоты»'
+                },
+                {
+                    text: 'Бонус «ИП или самозанятость»'
+                },
+                {
+                    text: 'Бонус «Ценообразование бьюти-мастера»'
+                },
+                {
+                    text: 'Персональные видеовстречи'
+                },
+                {
+                    text: 'Индивидуальный чат'
+                },
+            ],
+        },
+    ]
+
 section.tariffs
     .container
+        .tariffs__title.title тарифы
+
+        .tariffs__box
+            each tariff in tariffs
+                .tariff
+                    .card-head
+                        .card-head__text !{tariff.name}
+                    .tariff__box
+                        each item in tariff.list
+                            .tariff__item
+                                .tariff__item-icon
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 28.8C23.0692 28.8 28.8 23.0692 28.8 16C28.8 8.93075 23.0692 3.2 16 3.2C8.93075 3.2 3.2 8.93075 3.2 16C3.2 23.0692 8.93075 28.8 16 28.8ZM16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="url(#paint0_linear_146_627)"/>
+                                    <path d="M10.4 14.4L8 16.8L13.6 22.4L24 12L21.6 9.6L13.6 17.6L10.4 14.4Z" fill="url(#paint1_linear_146_627)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_146_627" x1="0.858369" y1="15.8505" x2="33.156" y2="15.9549" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#DEDEDE"/>
+                                    <stop offset="0.0001" stop-color="#CDCDCD"/>
+                                    <stop offset="0.25" stop-color="#F0F0F0"/>
+                                    <stop offset="0.4875" stop-color="#C9C9C9"/>
+                                    <stop offset="0.770833" stop-color="#EAEAEA"/>
+                                    <stop offset="1" stop-color="#F0F0F0"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_146_627" x1="0.858369" y1="15.8505" x2="33.156" y2="15.9549" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#DEDEDE"/>
+                                    <stop offset="0.0001" stop-color="#CDCDCD"/>
+                                    <stop offset="0.25" stop-color="#F0F0F0"/>
+                                    <stop offset="0.4875" stop-color="#C9C9C9"/>
+                                    <stop offset="0.770833" stop-color="#EAEAEA"/>
+                                    <stop offset="1" stop-color="#F0F0F0"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>
+
+                                .tariff__item-text !{item.text}
+                    .tariff__price-wrapper
+                        .tariff__price !{tariff.price}
+                    .tariff__btns
+                        a(href=tariff.linkPay).tariff__btn.btn.btn--white
+                            span Оплатить
+                        a(href=tariff.linkInstallment).tariff__btn.btn.btn--white
+                            span Оплатить в рассрочку
