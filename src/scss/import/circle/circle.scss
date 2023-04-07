@@ -1,0 +1,24 @@
+.circle {
+    padding: 26px;
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(22px);
+    background: rgba(250, 250, 250, 0.15);
+    position: absolute;
+    width: 280px;
+    border-radius: 50%;
+    top: -214px;
+    left: calc(50% + 380px);
+    transform: translate(-50%, 0%);
+
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+        width: 106px;
+        left: calc(50% + 100px);
+        top: auto;
+        bottom: 146px;
+    }
+
+    &__icon {
+        width: 100%;
+    }
+}

@@ -100,6 +100,8 @@ header.header.lazy(data-bg="img/header/bg.webp", data-bg-fallback="img/header/bg
                     img(src='img/header/woman.png')
                 .header__bottom
                     img(src='img/header/bottom.svg')
+                .header__bottom.header__bottom--mobile
+                    img(src='img/header/bottom--mobile.png')
                 .header__petals
                     img(src='img/header/petals.png')
                 .header__petals.header__petals--two
@@ -110,6 +112,7 @@ header.header.lazy(data-bg="img/header/bg.webp", data-bg-fallback="img/header/bg
                     img(src='img/header/petals--right.png')
 
         .header__footer
+            include ../circle.pug
             .header__content
                 .header__text <b>Проявленность, продажи и премиум-сегмент бьюти-индустрии</b> – это все через 6 недель будет про тебя
                 a(href='#').header__btn.btn
