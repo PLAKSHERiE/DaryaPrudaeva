@@ -4,6 +4,10 @@
     background-position: center top;
     background-size: cover;
     background-color: #FAF8F7;
+    @media screen and (max-width: 768px) {
+        background-color: #F2F0F0;
+        padding: 14px 0 50px;
+    }
 
     &__box {
         background: url("/img/about/bg--box.jpg") no-repeat;
@@ -14,10 +18,20 @@
         border: 2px solid #F03C6C;
         position: relative;
         padding: 38px 48px 70px;
+
+        @media screen and (max-width: 768px) {
+            background-image: url("/img/about/bg--box--mobile.jpg");
+            border-radius: 22px;
+            padding: 38px 16px 430px;
+        }
     }
 
     &__title {
         display: inline-block;
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            display: block;
+        }
     }
 
     &__list {
@@ -29,14 +43,24 @@
         flex-direction: column;
         gap: 12px;
 
+        @media screen and (max-width: 768px) {
+            gap: 20px;
+        }
+
         &-item {
             display: flex;
             align-items: center;
             gap: 12px;
 
+
             &-icon {
                 width: 32px;
                 display: block;
+                flex: 0 0 auto;
+
+                @media screen and (max-width: 768px) {
+                    width: 26px;
+                }
             }
             &-text {
                 font-family: 'Inter';
@@ -46,6 +70,12 @@
                 line-height: 19px;
 
                 color: #242424;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+
                 b {
                     font-weight: 600;
                 }
@@ -58,6 +88,13 @@
         width: 548px;
         right: -2px;
         top: -120px;
+        @media screen and (max-width: 768px) {
+            width: 296px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            top: auto;
+            bottom: 16px;
+        }
     }
 
     &__btn {
@@ -66,5 +103,13 @@
         left: 42px;
         padding-left: 40px;
         padding-right: 40px;
+        @media screen and (max-width: 768px) {
+            max-width: 294px;
+            font-size: 26px;
+            line-height: 33px;
+            padding: 18px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
     }
 }
