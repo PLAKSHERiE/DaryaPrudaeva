@@ -1,0 +1,106 @@
+.footer {
+    position: relative;
+    padding: 120px 0 16px;
+    background: #FAF8F7;
+
+    &__petals {
+        height: 730px;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% + 10px);
+        transform: translate(-50%, 0%);
+        pointer-events: none;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__woman {
+        pointer-events: none;
+        width: 615px;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% + 500px);
+        transform: translate(-50%, 0%);
+        filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.15)) drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.1));
+    }
+    &__layout {}
+    &__content {
+        position: relative;
+    }
+    &__title {
+        max-width: 800px;
+        position: relative;
+
+        &-quotes {
+            padding: 0 48px;
+            display: inline-block;
+            font-size: 52px;
+            line-height: 113.6%;
+        }
+        &-el {
+            position: absolute;
+            right: 24px;
+            top: 70px;
+            display: inline-block;
+
+            &-bg {
+                display: inline-block;
+                //width: 36px;
+            }
+            &-text {
+                font-family: 'SONGER Grotesque';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 44px;
+                line-height: 57px;
+                letter-spacing: -0.04em;
+
+                background: linear-gradient(90.01deg, #F55882 2.69%, #FF7DA0 22.51%, #F03B6C 41.5%, #FB668E 63.8%, #E97695 81.97%), #FFFFFF;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                padding: 0 2px;
+                color: #fff;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+            }
+            &-icon {
+                display: inline-block;
+                width: 36px;
+                position: absolute;
+                right: 6px;
+                bottom: -20px;
+                line-height: 0;
+            }
+        }
+    }
+    &__bottom {
+        position: relative;
+    }
+    &__socs {
+        margin-top: 176px;
+    }
+    &__soc {}
+    &__text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+
+        color: rgba(18, 18, 18, 0.64);
+        text-decoration: none;
+        display: block;
+    }
+    &__politic {
+        margin: 18px 0 8px;
+    }
+}

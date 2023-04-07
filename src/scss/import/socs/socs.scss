@@ -1,0 +1,9 @@
+.socs {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &__item {
+        width: 30px;
+    }
+}
