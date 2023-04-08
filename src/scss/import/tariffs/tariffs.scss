@@ -4,6 +4,10 @@
     background-position: center top;
     background-size: cover;
     background-color: #FAF8F7;
+    @media screen and (max-width: 768px) {
+        padding: 12px 0 22px;
+        background-color: #F2F0F0;
+    }
 
     &__title {
         text-align: center;
@@ -13,6 +17,10 @@
         gap: 34px;
         max-width: 1020px;
         margin: 66px auto 0;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 50px;
+        }
     }
 }
 
@@ -26,12 +34,17 @@
     .card-head {
         padding: 15px 12px;
         min-width: 324px;
+        @media screen and (max-width: 768px) {
+            min-width: initial;
+            padding: 6px;
+        }
     }
 
     &__box {
         display: flex;
         flex-direction: column;
         gap: 18px;
+
     }
     &__item {
         display: flex;
@@ -40,6 +53,10 @@
 
         &-icon {
             width: 32px;
+            flex: 0 0 auto;
+            @media screen and (max-width: 768px) {
+                width: 26px;
+            }
         }
         &-text {
             font-family: 'Inter';
@@ -49,6 +66,10 @@
             line-height: 19px;
 
             color: #FFFFFF;
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+                line-height: 17px;
+            }
         }
     }
     &__price {
@@ -67,6 +88,9 @@
         text-fill-color: transparent;
         padding: 0 1px;
         margin: 34px 0 20px;
+        @media screen and (max-width: 768px) {
+            margin: 56px 0 20px;
+        }
 
         &-wrapper {
             text-align: center;
@@ -79,6 +103,9 @@
         gap: 8px;
     }
     &__btn {
+        @media screen and (max-width: 768px) {
+            padding: 12px;
+        }
         span {
             font-size: 24px;
             line-height: 31px;

@@ -4,6 +4,7 @@
     background-position: center top;
     background-size: cover;
     background-color: #FAF8F7;
+    position: relative;
 
     @media screen and (max-width: 768px) {
         padding: 22px 0 30px;
@@ -12,6 +13,26 @@
 
         &__title {
         text-align: center;
+    }
+
+    &__img {
+        background: url("/img/programs/img.png") no-repeat;
+        background-size: contain;
+        background-position: center right;
+        position: absolute;
+        width: 1372px;
+        height: 1842px;
+        bottom: 0;
+        right: 0;
+        pointer-events: none;
+        @media screen and (max-width: 768px) {
+            background-image: url("/img/programs/img--mobile.png");
+            background-position: center right -75px;
+            width: 2025px;
+            height: 4110px;
+            left: calc(50%);
+            transform: translate(-50%, 0%);
+        }
     }
 
     &__box {
