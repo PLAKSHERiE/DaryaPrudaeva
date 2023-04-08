@@ -5,6 +5,9 @@
     background-position: center top;
     background-size: cover;
     background-color: #FAF8F7;
+    @media screen and (max-width: 768px) {
+        padding: 30px 0;
+    }
 
     &__petals {
         height: 730px;
@@ -15,12 +18,16 @@
         left: calc(50% + 10px);
         transform: translate(-50%, 0%);
         pointer-events: none;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
 
         img {
             height: 100%;
             object-fit: contain;
         }
     }
+
     &__woman {
         pointer-events: none;
         width: 615px;
@@ -29,7 +36,14 @@
         left: calc(50% + 500px);
         transform: translate(-50%, 0%);
         filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.15)) drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.1));
+        @media screen and (max-width: 768px) {
+            width: 450px;
+            left: calc(50% + 18px);
+            bottom: 180px;
+
+        }
     }
+
     &__layout {
         position: absolute;
         left: 0;
@@ -38,14 +52,25 @@
         background: linear-gradient(180deg, rgba(250, 248, 247, 0) 0%, #FAF8F7 100%);
         height: 351px;
         width: 100%;
+        @media screen and (max-width: 768px) {
+            background: url("/img/footer/layout--mobile.png") no-repeat;
+            background-position: center;
+            background-size: 100%;
+            height: 360px;
+        }
     }
+
     &__content {
         position: relative;
     }
+
     &__title {
         max-width: 800px;
         position: relative;
         color: #1C2027;
+        @media screen and (max-width: 768px) {
+            padding-bottom: 100px;
+        }
 
         &-quotes {
             padding: 0 48px;
@@ -55,6 +80,42 @@
             position: relative;
             z-index: 2;
             -webkit-text-fill-color: initial;
+            @media screen and (max-width: 768px) {
+                padding: 0;
+                text-align: center;
+                font-size: 44px;
+                line-height: 113.6%;
+            }
+
+            &::before {
+                content: '';
+                background-image: url("data:image/svg+xml,%3Csvg width='37' height='25' viewBox='0 0 37 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.07054 24.4137C2.45321 22.9497 3.63254 21.3637 4.60854 19.6557C5.58454 17.8664 6.31654 16.1177 6.80454 14.4097C6.72321 14.4097 6.64188 14.4097 6.56054 14.4097C6.47921 14.4097 6.43854 14.4097 6.43854 14.4097C4.73054 14.4097 3.22588 13.7591 1.92454 12.4577C0.704543 11.0751 0.0945435 9.44841 0.0945435 7.57774C0.0945435 5.46307 0.785877 3.71441 2.16854 2.33175C3.63254 0.867745 5.34054 0.135742 7.29254 0.135742C9.48854 0.135742 11.2779 0.827076 12.6605 2.20974C14.1245 3.59241 14.8565 5.42241 14.8565 7.69974C14.8565 10.3837 14.0432 13.4744 12.4165 16.9717C10.8712 20.4691 9.04121 23.1124 6.92654 24.9017H1.07054V24.4137ZM22.2985 24.4137C23.6812 22.9497 24.8605 21.3637 25.8365 19.6557C26.8125 17.8664 27.5445 16.1177 28.0325 14.4097C27.9512 14.4097 27.8699 14.4097 27.7885 14.4097C27.7072 14.4097 27.6665 14.4097 27.6665 14.4097C25.9585 14.4097 24.4539 13.7591 23.1525 12.4577C21.9325 11.0751 21.3225 9.44841 21.3225 7.57774C21.3225 5.46307 22.0139 3.71441 23.3965 2.33175C24.8605 0.867745 26.5685 0.135742 28.5205 0.135742C30.7165 0.135742 32.5059 0.827076 33.8885 2.20974C35.3525 3.59241 36.0845 5.42241 36.0845 7.69974C36.0845 10.3837 35.2712 13.4744 33.6445 16.9717C32.0992 20.4691 30.2692 23.1124 28.1545 24.9017H22.2985V24.4137Z' fill='url(%23paint0_linear_165_718)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_165_718' x1='-4.76609' y1='37.3178' x2='31.7082' y2='37.3206' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F55882'/%3E%3Cstop offset='0.25' stop-color='%23FF7DA0'/%3E%3Cstop offset='0.489583' stop-color='%23F03B6C'/%3E%3Cstop offset='0.770833' stop-color='%23FB668E'/%3E%3Cstop offset='1' stop-color='%23E97695'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 36px;
+                height: 24px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+            &::after {
+                content: '';
+                background-image: url("data:image/svg+xml,%3Csvg width='37' height='26' viewBox='0 0 37 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.7666 0.867882C34.3839 2.33188 33.2046 3.95855 32.2286 5.74788C31.2526 7.45588 30.5206 9.16388 30.0326 10.8719C30.1139 10.8719 30.1952 10.8719 30.2766 10.8719C30.3579 10.8719 30.3986 10.8719 30.3986 10.8719C32.1066 10.8719 33.5706 11.5632 34.7906 12.9459C36.0919 14.2472 36.7426 15.8332 36.7426 17.7039C36.7426 19.8185 36.0106 21.6079 34.5466 23.0719C33.1639 24.4545 31.4966 25.1459 29.5446 25.1459C27.3486 25.1459 25.5186 24.4545 24.0546 23.0719C22.6719 21.6892 21.9806 19.8592 21.9806 17.5819C21.9806 14.8979 22.7532 11.8072 24.2986 8.30988C25.9252 4.81255 27.7959 2.16922 29.9106 0.379883H35.7666V0.867882ZM14.5386 0.867882C13.1559 2.33188 11.9766 3.95855 11.0006 5.74788C10.0246 7.45588 9.29256 9.16388 8.80456 10.8719C8.8859 10.8719 8.96723 10.8719 9.04856 10.8719C9.1299 10.8719 9.17056 10.8719 9.17056 10.8719C10.8786 10.8719 12.3426 11.5632 13.5626 12.9459C14.8639 14.2472 15.5146 15.8332 15.5146 17.7039C15.5146 19.8185 14.7826 21.6079 13.3186 23.0719C11.9359 24.4545 10.2686 25.1459 8.31656 25.1459C6.12056 25.1459 4.29056 24.4545 2.82656 23.0719C1.4439 21.6892 0.752563 19.8592 0.752563 17.5819C0.752563 14.8979 1.52523 11.8072 3.07056 8.30988C4.69723 4.81255 6.5679 2.16922 8.68256 0.379883H14.5386V0.867882Z' fill='url(%23paint0_linear_150_656)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_150_656' x1='-2.76609' y1='37.3177' x2='33.7082' y2='37.3206' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F55882'/%3E%3Cstop offset='0.25' stop-color='%23FF7DA0'/%3E%3Cstop offset='0.489583' stop-color='%23F03B6C'/%3E%3Cstop offset='0.770833' stop-color='%23FB668E'/%3E%3Cstop offset='1' stop-color='%23E97695'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 36px;
+                height: 24px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
         }
 
         &-sun {
@@ -73,6 +134,10 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
+                @media screen and (max-width: 768px) {
+                    width: 296px;
+                    height: 296px;
+                }
             }
         }
 
@@ -82,11 +147,25 @@
             top: 70px;
             display: inline-block;
             z-index: 3;
+            @media screen and (max-width: 768px) {
+                top: auto;
+                left: 50%;
+                right: auto;
+                bottom: 0;
+                transform: translate(-50%, 0%);
+            }
 
             &-bg {
                 display: inline-block;
                 //width: 36px;
+                width: 340px;
+                height: 100px;
+                @media screen and (max-width: 768px) {
+                    width: 294px;
+                    height: 86px;
+                }
             }
+
             &-text {
                 font-family: 'SONGER Grotesque';
                 font-style: normal;
@@ -107,7 +186,12 @@
                 top: 50%;
                 transform: translate(-50%, -50%);
                 white-space: nowrap;
+                @media screen and (max-width: 768px) {
+                    font-size: 44px;
+                    line-height: 57px;
+                }
             }
+
             &-icon {
                 display: inline-block;
                 width: 36px;
@@ -115,16 +199,29 @@
                 right: 6px;
                 bottom: -20px;
                 line-height: 0;
+                @media screen and (max-width: 768px) {
+                    width: 32px;
+                    right: 5px;
+                }
             }
         }
     }
+
     &__bottom {
         position: relative;
-    }
-    &__socs {
         margin-top: 176px;
+        @media screen and (max-width: 768px) {
+            margin-top: 516px;
+        }
     }
-    &__soc {}
+
+    &__socs {
+
+    }
+
+    &__soc {
+    }
+
     &__text {
         font-family: 'Inter';
         font-style: normal;
@@ -135,8 +232,15 @@
         color: rgba(18, 18, 18, 0.64);
         text-decoration: none;
         display: block;
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
     }
+
     &__politic {
         margin: 18px 0 8px;
+        @media screen and (max-width: 768px) {
+            margin: 18px 0;
+        }
     }
 }
