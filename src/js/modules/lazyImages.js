@@ -17,4 +17,8 @@ export default () => {
     const lazyLoadInstance = new LazyLoad({
         elements_selector: ".lazy",
     });
+
+    window.onload = () => {
+        lazyLoadInstance.loadAll();
+    };
 };
