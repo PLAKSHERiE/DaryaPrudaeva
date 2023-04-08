@@ -149,3 +149,10 @@ img, svg {
         padding: 14px 18px;
     }
 }
+
+.svg-gradients {
+    visibility: hidden;
+    position: absolute;
+    z-index: -500;
+    pointer-events: none;
+}
