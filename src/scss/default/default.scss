@@ -145,4 +145,7 @@ img, svg {
     border: none;
     outline: none;
     padding: 14px 30px;
+    @media screen and (max-width: 768px) {
+        padding: 14px 18px;
+    }
 }

@@ -4,6 +4,9 @@
     border-radius: 24px;
     padding: 30px;
     position: relative;
+    @media screen and (max-width: 768px) {
+        padding: 34px 12px 20px;
+    }
 
     &__el {
         position: absolute;
@@ -12,11 +15,21 @@
             width: 45px;
             left: -18px;
             bottom: -18px;
+            @media screen and (max-width: 768px) {
+                width: 39px;
+                bottom: -24px;
+                left: 0;
+            }
         }
         &--right-top {
             width: 82px;
             top: 10px;
             right: -40px;
+            @media screen and (max-width: 768px) {
+                width: 62px;
+                right: 10px;
+                top: -32px;
+            }
         }
     }
     &__input {
@@ -31,13 +44,23 @@
             align-items: center;
 
             color: #1B1919;
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+                line-height: 15px;
+            }
         }
         .input {
             margin-top: 12px;
             margin-bottom: 18px;
+            @media screen and (max-width: 768px) {
+                margin-top: 6px;
+                margin-bottom: 28px;
+            }
         }
     }
     &__btn {
-        margin-top: 18;
-    }
+        @media screen and (max-width: 768px) {
+            padding: 15px;
+        }
+        }
 }

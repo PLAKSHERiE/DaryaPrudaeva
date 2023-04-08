@@ -3,8 +3,13 @@
     background-position: center bottom;
     background-size: cover;
     background-color: #FAF8F7;
-
     padding: 32px 0 100px;
+
+    @media screen and (max-width: 768px) {
+        background-color: #F2F0F0;
+        padding: 32px 0 45px;
+    }
+
 
     &__title {
         text-align: center;
@@ -12,9 +17,15 @@
     &__subttile {
         text-align: center;
         margin-top: 12px;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
     &__form {
         max-width: 882px;
         margin: 68px auto 0;
+        @media screen and (max-width: 768px) {
+            margin-top: 24px;
+        }
     }
 }
